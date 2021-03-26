@@ -51,3 +51,30 @@ title          NoteProperty string title=You CAN visit your pal or family's gard
 topic          NoteProperty string topic=news
 _id            NoteProperty string _id=ba169c1691830b7e1ef1ccdf65fe584f
 ```
+
+Additional parameters with options can be specified for the request.
+
+```shell
+|- topic # Returns articles tagged with the associated topic. Not all articles are tagged.
+| |- news
+| |- sport
+| |- tech
+| |- world
+| |- finance
+| |- politics
+| |- business
+| |- economics
+| |- entertainment
+| |- beauty
+| |- travel
+| |- music
+| |- food
+| |- science
+|- lang # Defaults to English (en) but supports more.
+| |- en
+|- country
+| |- Supports ISO 3166-1 alpha-2 codes
+|- media # Toggles returning images used in an article
+| |- True
+| |- False
+```
